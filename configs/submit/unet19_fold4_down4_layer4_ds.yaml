@@ -1,0 +1,14 @@
+OUTPUT_DIR: './checkpoint/unet19/fold4_down4_layer4_ds'
+
+MODEL:
+  MODEL: 'UNet19Layer4'
+  LOSS: 'DiceLossV1'
+  DEEP_SUP: 'v2'
+
+SOLVER:
+  LR: 0.01
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DOWN_SAMPLE_RATE: (4., )

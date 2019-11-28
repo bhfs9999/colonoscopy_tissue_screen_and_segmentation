@@ -1,0 +1,13 @@
+OUTPUT_DIR: './checkpoint/unet16/fold4_down4_layer4'
+
+MODEL:
+  MODEL: 'UNet16Layer4'
+  LOSS: 'DiceLossV1'
+
+SOLVER:
+  LR: 0.01
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DOWN_SAMPLE_RATE: (4., )

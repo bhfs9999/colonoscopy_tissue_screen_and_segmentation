@@ -1,0 +1,10 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/unet/focalloss'
+
+MODEL:
+  MODEL: 'UNet'
+  LOSS: 'FocalLoss'
+
+SOLVER:
+  LR: 0.001
+  EPOCHS: 500
+  STEPS: (300, 400)

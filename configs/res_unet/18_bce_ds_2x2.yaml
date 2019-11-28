@@ -1,0 +1,16 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/res_unet/18_bce_ds'
+
+MODEL:
+  DEEP_SUP: True
+  MODEL: 'ResUNet18'
+  LOSS: 'BceLoss'
+
+SOLVER:
+  LR: 0.001
+  EPOCHS: 500
+  STEPS: (300, 400)
+  BATCH_SIZE_TRAIN: 2
+  PATCH_NUM_PER_IMG_TRAIN: 2
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'or'

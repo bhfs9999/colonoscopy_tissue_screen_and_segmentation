@@ -1,0 +1,14 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/resunet/101_dicelossv1_down4'
+
+MODEL:
+  MODEL: 'ResUNet101'
+  LOSS: 'DiceLossV1'
+
+SOLVER:
+  LR: 0.01
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'or'
+  DOWN_SAMPLE_RATE: (4.0, )

@@ -1,0 +1,19 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/unet/bce_sedsv2_fusionv2_down2_longsche_center_rd_crop0.6'
+
+MODEL:
+  DEEP_SUP: 'v2'
+  DEEP_SUP_SE: True
+  FUSION_DS: 'v2'
+  MODEL: 'UNet'
+  LOSS: 'BceLoss'
+
+SOLVER:
+  LR: 0.001
+  EPOCHS: 1000
+  STEPS: (500, 800)
+  DRAW: True
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'or'
+  DOWN_SAMPLE_RATE: 4.
+  RANDOM_CROP_POS_CENTER_P: 0.6

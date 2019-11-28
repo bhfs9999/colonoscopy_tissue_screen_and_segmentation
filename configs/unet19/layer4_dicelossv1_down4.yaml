@@ -1,0 +1,13 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/unet19/layer4_dicelossv1_down4'
+
+MODEL:
+  MODEL: 'UNet19Layer4'
+  LOSS: 'DiceLossV1'
+
+SOLVER:
+  LR: 0.01
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DOWN_SAMPLE_RATE: (4., )

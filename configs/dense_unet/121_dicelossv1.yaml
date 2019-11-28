@@ -1,0 +1,15 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/dense_unet/121_dicelossv1'
+
+MODEL:
+  MODEL: 'DenseUNet121'
+  LOSS: 'DiceLossV1'
+
+SOLVER:
+  LR: 0.001
+  EPOCHS: 500
+  STEPS: (300, 400)
+  BATCH_SIZE_TRAIN: 1
+  PATCH_NUM_PER_IMG_TRAIN: 2
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'prob_mean'

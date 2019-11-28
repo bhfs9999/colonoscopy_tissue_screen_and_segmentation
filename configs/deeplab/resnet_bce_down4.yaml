@@ -1,0 +1,14 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/deeplab/resnet_bce_down4'
+
+MODEL:
+  MODEL: 'deeplab_resnet'
+  LOSS: 'BceLoss'
+
+SOLVER:
+  LR: 0.004
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'or'
+  DOWN_SAMPLE_RATE: 4.

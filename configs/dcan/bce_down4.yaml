@@ -1,0 +1,14 @@
+OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/dcan/bce_down4'
+
+MODEL:
+  MODEL: 'dcan'
+  LOSS: 'BceLoss'
+
+SOLVER:
+  LR: 0.01
+  EPOCHS: 2000
+  DRAW: True
+
+DATA:
+  DENSE_CROP_MERGE_METHOD: 'or'
+  DOWN_SAMPLE_RATE: 4.
