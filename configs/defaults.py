@@ -19,7 +19,7 @@ cfg.DATA.DATASET_TRAIN = './data_split/split_4_fold/0_train.txt'
 cfg.DATA.DATASET_VALID = './data_split/split_4_fold/0_valid.txt'
 cfg.DATA.DATASET_TEST = './data_split/split_4_fold/0_valid.txt'  # no test data left, you can make you own test data
 # path to dir that save tissue image and mask, image and mask
-cfg.DATA.DATA_ROOT = '/data/bhfs/challenge/MICCAI2019/Colonoscopy_tissue_segment_dataset/tissue-train-pos-neg/'
+cfg.DATA.DATA_ROOT = './data/raw_data'
 
 cfg.DATA.NUM_CLS = 2  # binary segmentation here
 

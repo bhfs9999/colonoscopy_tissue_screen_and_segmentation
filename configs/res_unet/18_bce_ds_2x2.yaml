@@ -1,5 +1,3 @@
-OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/res_unet/18_bce_ds'
-
 MODEL:
   DEEP_SUP: True
   MODEL: 'ResUNet18'

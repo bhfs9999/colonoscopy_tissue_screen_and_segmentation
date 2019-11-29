@@ -1,5 +1,3 @@
-OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/dense_unet/121_dicelossv1'
-
 MODEL:
   MODEL: 'DenseUNet121'
   LOSS: 'DiceLossV1'

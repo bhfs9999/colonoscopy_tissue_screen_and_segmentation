@@ -1,5 +1,3 @@
-OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/unet/focalloss'
-
 MODEL:
   MODEL: 'UNet'
   LOSS: 'FocalLoss'

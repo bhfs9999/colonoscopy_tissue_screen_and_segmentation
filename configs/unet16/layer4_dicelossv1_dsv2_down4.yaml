@@ -1,5 +1,3 @@
-OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/unet16/layer4_dicelossv1_dsv2_down4'
-
 MODEL:
   MODEL: 'UNet16Layer4'
   LOSS: 'DiceLossV1'

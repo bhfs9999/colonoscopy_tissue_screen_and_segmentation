@@ -14,6 +14,13 @@ PyTorch1.1, Python3.7
 * install other package `pip install -r requirement.txt`
 
 ## Usage
+### Prepare data
+1. Download data: Follow the instruction [here](https://digestpath2019.grand-challenge.org/Download/).
+2. Prepare data: unzip the download file, and put all the image together in `data/raw_data`. 
+    
+    *note: only malignant tissue have corresponding mask, you need to generate mask for benign tissue
+     (zero mask with the same size) to train malignant and benign sample together. You can use  use script `lib/util/process/pre_processes/generate_benign_mask.py`*
+
 ### Training model
 ##### Quick start
 `CUDA_VISIBLE_DEVICES=0 python train_net.py --config-file ./configs/unet/layer4_dicelossv1_dsv2_down4.yaml`
@@ -24,7 +31,7 @@ This will train our final submitted model on fold 0 (total 4 fold). It will take
 Model, training and validation result will be saved in tensorboard in `cfg.OUTPUT_DIR`, use tensorboard to have a look.
 ##### configure your own model
 To use other model, se `configs/defaults.py` for default configuration. You can create your own `yaml` 
-file to overwrite default configuration. Eg. set `cfg.MODEL.MODEL = 'unet16layer4'` to use our proposed model
+file to overwrite default configuration. Eg. set `cfg.MODEL.MODEL = 'UNet16Layer4'` to use our proposed model
 
 ### Test
 Use the same yaml file to test the trained model.

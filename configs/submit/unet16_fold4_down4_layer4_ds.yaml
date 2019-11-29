@@ -1,5 +1,3 @@
-OUTPUT_DIR: './checkpoint/unet16/fold4_down4_layer4_ds'
-
 MODEL:
   MODEL: 'UNet16Layer4'
   LOSS: 'DiceLossV1'

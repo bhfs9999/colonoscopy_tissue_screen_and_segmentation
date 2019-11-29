@@ -1,5 +1,3 @@
-OUTPUT_DIR: '/data/bhfs/code/colonoscopy_segmentation/output/gcn/bce_down4'
-
 MODEL:
   MODEL: 'gcn'
   LOSS: 'BceLoss'
